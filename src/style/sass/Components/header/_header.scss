@@ -1,0 +1,38 @@
+header {
+  width: 1240px;
+  margin: 40px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  .header_logo {
+    img {
+      height: 39px;
+      margin: 0 4px;
+    }
+    img:nth-child(1) {
+      height: 62px;
+    }
+    img:nth-child(2) {
+      position: relative;
+      top: 8px;
+      height: 53px;
+    }
+  }
+  nav {
+    width: 309px;
+    height: 34px;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: $mainColor;
+      font-size: 24px;
+      text-align: right;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
