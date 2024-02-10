@@ -154,7 +154,7 @@ footer p {
   margin: 60px auto;
 }
 .sectionGallery ul {
-  padding: 15px 0;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -165,21 +165,21 @@ footer p {
 main {
   margin-bottom: 100px;
 }
-main .sectionSize {
+main .dropdownSize {
   width: 1023px;
   margin: auto;
 }
 
-.section_box {
+.dropdown_box {
   position: relative;
   overflow: hidden;
   margin-bottom: 40px;
 }
-.section_box .section_box_h2 {
+.dropdown_box .dropdown_box_h2 {
   display: flex;
   position: relative;
 }
-.section_box .section_box_h2 h2 {
+.dropdown_box .dropdown_box_h2 h2 {
   width: 100%;
   margin: 0;
   display: flex;
@@ -191,19 +191,19 @@ main .sectionSize {
   border-radius: 10px;
   padding-left: 20px;
 }
-.section_box .section_box_h2 img {
+.dropdown_box .dropdown_box_h2 img {
   position: absolute;
   margin: auto;
   top: 40%;
   right: 10px;
   width: 24px;
 }
-.section_box .section_box_h2 .reverse_arrow {
+.dropdown_box .dropdown_box_h2 .reverse_arrow {
   transform: rotate(180deg);
 }
-.section_box p {
+.dropdown_box .dropdown_box_content {
   margin: 0;
-  padding: 40px 18px 30px;
+  padding: 50px 20px 25px;
   display: block;
   background-color: #f6f6f6;
   color: #ff6060;
@@ -215,11 +215,17 @@ main .sectionSize {
   position: absolute;
   z-index: -1;
 }
+.dropdown_box .dropdown_box_content p {
+  margin: 0;
+}
+.dropdown_box .dropdown_box_content li {
+  list-style-type: none;
+}
 
 .open {
   overflow: visible;
 }
-.open p {
+.open .dropdown_box_content {
   position: relative !important;
   top: -20px;
   bottom: auto !important;
@@ -247,4 +253,115 @@ main .sectionSize {
 }
 .errorComponent a:visited {
   color: #ff6060;
+}
+
+.logement {
+  margin: auto;
+  width: 1240px;
+}
+.logement .logement_img {
+  border-radius: 25px;
+  height: 415px;
+  overflow: hidden;
+}
+
+.logement_img_caroussel {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.logement_img_caroussel .caroussel_arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 100%;
+}
+.logement_img_caroussel .caroussel_arrow img {
+  height: 80px;
+}
+.logement_img_caroussel .caroussel_arrow img:hover {
+  cursor: pointer;
+}
+.logement_img_caroussel .arrow_after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.646));
+  right: 0px;
+}
+.logement_img_caroussel .arrow_before {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.646));
+  left: 0px;
+}
+
+.logement_article .logement_article_wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #ff6060;
+}
+.logement_article .logement_article_wrapper .logement_article_info h1 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 36px;
+}
+.logement_article .logement_article_wrapper .logement_article_info .logement_article_info_location {
+  font-size: 18px;
+}
+.logement_article .logement_article_wrapper .logement_article_info .logement_article_tags {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 15px;
+}
+.logement_article .logement_article_wrapper .logement_article_userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host img {
+  width: 64px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.logement_article .logement_article_other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logement_article .logement_article_other .logement_article_other_wrapper {
+  width: 45%;
+}
+
+.logement_tag_wrapper {
+  background-color: #ff6060;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.logement_tag_wrapper p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin: auto 10px;
+}
+
+.logement_article_userInfo_rating img {
+  margin: auto 2px;
+  width: 36px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,8 +1,8 @@
-.section_box {
+.dropdown_box {
   position: relative;
   overflow: hidden;
   margin-bottom: 40px;
-  .section_box_h2 {
+  .dropdown_box_h2 {
     display: flex;
     position: relative;
 
@@ -30,9 +30,9 @@
       transform: rotate(180deg);
     }
   }
-  p {
+  .dropdown_box_content {
     margin: 0;
-    padding: 40px 18px 30px;
+    padding: 50px 20px 25px;
     display: block;
     background-color: #f6f6f6;
     color: $mainColor;
@@ -43,11 +43,17 @@
     bottom: 100%;
     position: absolute;
     z-index: -1;
+    p {
+      margin: 0;
+    }
+    li {
+      list-style-type: none;
+    }
   }
 }
 .open {
   overflow: visible;
-  p {
+  .dropdown_box_content {
     position: relative !important;
     top: -20px;
     bottom: auto !important;
