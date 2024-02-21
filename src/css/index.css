@@ -3,14 +3,46 @@
   font-family: "Montserrat";
 }
 
+body {
+  padding-top: 30px;
+}
+@media (max-width: 650px) {
+  body {
+    padding-top: 20px;
+  }
+}
+
+main {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+@media (max-width: 650px) {
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 header {
-  width: 1240px;
-  margin: 40px 100px;
   display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 50px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 650px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+}
+header .header_logo {
+  display: flex;
+  align-items: end;
 }
 header .header_logo img {
   height: 39px;
@@ -24,11 +56,25 @@ header .header_logo img:nth-child(2) {
   top: 8px;
   height: 53px;
 }
+@media (max-width: 650px) {
+  header .header_logo img {
+    height: 33px;
+    margin: 0 4px;
+  }
+  header .header_logo img:nth-child(1) {
+    height: 48px;
+  }
+  header .header_logo img:nth-child(2) {
+    position: relative;
+    top: 8px;
+    height: 37px;
+  }
+}
 header nav {
-  width: 309px;
-  height: 34px;
   display: flex;
   justify-content: space-around;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 header nav a {
   color: #ff6060;
@@ -39,9 +85,24 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 650px) {
+  header nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 650px) and (max-width: 350px) {
+  header nav a {
+    font-size: 12px;
+  }
+}
 
 footer {
   background-color: black;
+  width: 100%;
   height: 209px;
   flex-direction: column;
   display: flex;
@@ -72,11 +133,15 @@ footer p {
 
 .banner {
   height: 220px;
-  width: 1240px;
-  margin: 0 auto 50px;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
+}
+@media (max-width: 650px) {
+  .banner {
+    height: 110px;
+    border-radius: 10px;
+  }
 }
 .banner .banner_background {
   height: 100%;
@@ -109,16 +174,35 @@ footer p {
   font-weight: 500;
   font-size: 48px;
 }
+@media (max-width: 860px) {
+  .banner h1 {
+    top: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .banner h1 {
+    font-size: 24px;
+    top: 33%;
+  }
+}
 
+@media (max-width: 650px) {
+  .sectionGallery_card {
+    width: 100%;
+  }
+}
 .sectionGallery_card a {
-  margin: 20px auto;
   display: block;
   height: 340px;
   width: 340px;
-  position: relative;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 650px) {
+  .sectionGallery_card a {
+    width: 100%;
+  }
 }
 .sectionGallery_card a .sectionGallery_card_img::after {
   content: "";
@@ -135,7 +219,11 @@ footer p {
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
+}
+@media (max-width: 650px) {
+  .sectionGallery_card a .sectionGallery_card_img img {
+    width: 100%;
+  }
 }
 .sectionGallery_card a p {
   font-size: 18px;
@@ -143,31 +231,47 @@ footer p {
   color: white;
   position: absolute;
   z-index: 99;
-  top: 268px;
+  bottom: 0px;
   left: 20px;
 }
-
 .sectionGallery {
-  width: 1240px;
   border-radius: 25px;
   background-color: #f6f6f6;
   margin: 60px auto;
+  padding: 40px;
+}
+@media (max-width: 650px) {
+  .sectionGallery {
+    margin: 20px auto;
+    padding: 0;
+  }
 }
 .sectionGallery ul {
-  padding: 20px;
+  padding: 0;
   display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 40px;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
 }
-
-main {
-  margin-bottom: 100px;
+@media (max-width: 650px) {
+  .sectionGallery ul {
+    row-gap: 20px;
+    width: 100%;
+  }
 }
-main .dropdownSize {
-  width: 1023px;
-  margin: auto;
+
+.dropdownSize {
+  margin: 20px auto 100px;
+  width: 80%;
+}
+@media (max-width: 650px) {
+  .dropdownSize {
+    width: 100%;
+  }
 }
 
 .dropdown_box {
@@ -191,12 +295,23 @@ main .dropdownSize {
   border-radius: 10px;
   padding-left: 20px;
 }
+@media (max-width: 650px) {
+  .dropdown_box .dropdown_box_h2 h2 {
+    height: 40px;
+    font-size: 20px;
+  }
+}
 .dropdown_box .dropdown_box_h2 img {
   position: absolute;
   margin: auto;
   top: 40%;
   right: 10px;
   width: 24px;
+}
+@media (max-width: 650px) {
+  .dropdown_box .dropdown_box_h2 img {
+    width: 18px;
+  }
 }
 .dropdown_box .dropdown_box_h2 .reverse_arrow {
   transform: rotate(180deg);
@@ -214,6 +329,13 @@ main .dropdownSize {
   bottom: 100%;
   position: absolute;
   z-index: -1;
+}
+@media (max-width: 650px) {
+  .dropdown_box .dropdown_box_content {
+    padding: 40px 10px 25px;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 .dropdown_box .dropdown_box_content p {
   margin: 0;
@@ -255,10 +377,6 @@ main .dropdownSize {
   color: #ff6060;
 }
 
-.logement {
-  margin: auto;
-  width: 1240px;
-}
 .logement .logement_img {
   border-radius: 25px;
   height: 415px;

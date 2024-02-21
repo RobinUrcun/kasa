@@ -6,12 +6,12 @@ function Dropdown({ title, text }) {
   function rolltext() {
     setIsOpen(!isOpen);
   }
-  console.log(text);
   return (
     <div className={isOpen === false ? "dropdown_box" : "dropdown_box open"}>
       <div className="dropdown_box_h2">
         <h2 onClick={rolltext}>{title}</h2>
         <img
+          onClick={rolltext}
           className={isOpen === true ? "reverse_arrow" : null}
           src={arrow}
           alt="fleche"

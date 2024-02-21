@@ -4,7 +4,9 @@ import Gallery from "./gallery/gallery";
 function Home() {
   return (
     <main className="home">
-      <Banner />
+      <Banner>
+        <h1>Chez vous, partout et ailleurs</h1>
+      </Banner>
       <Gallery />
     </main>
   );

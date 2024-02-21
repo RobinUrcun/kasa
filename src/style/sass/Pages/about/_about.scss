@@ -1,7 +1,8 @@
-main {
-  margin-bottom: 100px;
-  .dropdownSize {
-    width: 1023px;
-    margin: auto;
+.dropdownSize {
+  margin: 20px auto 100px;
+
+  width: 80%;
+  @media (max-width: 650px) {
+    width: 100%;
   }
 }

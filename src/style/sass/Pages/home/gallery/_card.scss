@@ -1,13 +1,17 @@
 .sectionGallery_card {
+  @media (max-width: 650px) {
+    width: 100%;
+  }
   a {
-    margin: 20px auto;
     display: block;
     height: 340px;
     width: 340px;
-    position: relative;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    @media (max-width: 650px) {
+      width: 100%;
+    }
     .sectionGallery_card_img {
       &::after {
         content: "";
@@ -23,7 +27,9 @@
         width: 340px;
         height: 340px;
         object-fit: cover;
-        position: relative;
+        @media (max-width: 650px) {
+          width: 100%;
+        }
       }
     }
 
@@ -33,8 +39,10 @@
       color: white;
       position: absolute;
       z-index: 99;
-      top: 268px;
+      bottom: 0px;
       left: 20px;
+      @media (max-width: 650px) {
+      }
     }
   }
 }
