@@ -1,6 +1,12 @@
 .logement_article_userInfo_rating {
+  @media (max-width: 650px) {
+    display: flex;
+  }
   img {
     margin: auto 2px;
     width: 36px;
+    @media (max-width: 650px) {
+      width: 28px;
+    }
   }
 }

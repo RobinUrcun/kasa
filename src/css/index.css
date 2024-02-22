@@ -382,6 +382,11 @@ footer p {
   height: 415px;
   overflow: hidden;
 }
+@media (max-width: 650px) {
+  .logement .logement_img {
+    height: 255px;
+  }
+}
 
 .logement_img_caroussel {
   height: 100%;
@@ -399,6 +404,11 @@ footer p {
 }
 .logement_img_caroussel .caroussel_arrow img {
   height: 80px;
+}
+@media (max-width: 650px) {
+  .logement_img_caroussel .caroussel_arrow img {
+    height: 20px;
+  }
 }
 .logement_img_caroussel .caroussel_arrow img:hover {
   cursor: pointer;
@@ -420,13 +430,29 @@ footer p {
   font-weight: 500;
   color: #ff6060;
 }
+@media (max-width: 650px) {
+  .logement_article .logement_article_wrapper {
+    margin: 30px auto;
+    flex-direction: column;
+  }
+}
 .logement_article .logement_article_wrapper .logement_article_info h1 {
   font-weight: 500;
   margin: 0;
   font-size: 36px;
 }
+@media (max-width: 650px) {
+  .logement_article .logement_article_wrapper .logement_article_info h1 {
+    font-size: 25px;
+  }
+}
 .logement_article .logement_article_wrapper .logement_article_info .logement_article_info_location {
   font-size: 18px;
+}
+@media (max-width: 650px) {
+  .logement_article .logement_article_wrapper .logement_article_info .logement_article_info_location {
+    font-size: 16px;
+  }
 }
 .logement_article .logement_article_wrapper .logement_article_info .logement_article_tags {
   margin-top: 20px;
@@ -438,6 +464,12 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 650px) {
+  .logement_article .logement_article_wrapper .logement_article_userInfo {
+    margin-top: 20px;
+    flex-direction: row-reverse;
+  }
 }
 .logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host {
   display: flex;
@@ -458,8 +490,18 @@ footer p {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .logement_article .logement_article_other {
+    flex-direction: column;
+  }
+}
 .logement_article .logement_article_other .logement_article_other_wrapper {
   width: 45%;
+}
+@media (max-width: 650px) {
+  .logement_article .logement_article_other .logement_article_other_wrapper {
+    width: 100%;
+  }
 }
 
 .logement_tag_wrapper {
@@ -479,7 +521,17 @@ footer p {
   margin: auto 10px;
 }
 
+@media (max-width: 650px) {
+  .logement_article_userInfo_rating {
+    display: flex;
+  }
+}
 .logement_article_userInfo_rating img {
   margin: auto 2px;
   width: 36px;
+}
+@media (max-width: 650px) {
+  .logement_article_userInfo_rating img {
+    width: 28px;
+  }
 }/*# sourceMappingURL=index.css.map */

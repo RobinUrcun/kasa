@@ -2,4 +2,7 @@
   border-radius: 25px;
   height: 415px;
   overflow: hidden;
+  @media (max-width: 650px) {
+    height: 255px;
+  }
 }
