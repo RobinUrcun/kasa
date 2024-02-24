@@ -132,14 +132,19 @@ footer p {
 }
 
 .banner {
-  height: 220px;
+  max-height: 220px;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
+  display: grid;
+  place-items: center;
+}
+.banner > * {
+  grid-area: 1/1;
 }
 @media (max-width: 650px) {
   .banner {
-    height: 110px;
+    max-height: 110px;
     border-radius: 10px;
   }
 }
@@ -149,9 +154,14 @@ footer p {
 }
 .banner .banner_background img {
   width: 100%;
-  height: 100%;
+  max-height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 650px) {
+  .banner .banner_background img {
+    max-height: 110px;
+  }
 }
 .banner .banner_background::after {
   content: "";
@@ -164,25 +174,15 @@ footer p {
   right: 0;
 }
 .banner h1 {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 40%;
   text-align: center;
   color: white;
   font-weight: 500;
   font-size: 48px;
-}
-@media (max-width: 860px) {
-  .banner h1 {
-    top: 25%;
-  }
+  z-index: 3;
 }
 @media (max-width: 650px) {
   .banner h1 {
     font-size: 24px;
-    top: 33%;
   }
 }
 
@@ -417,6 +417,17 @@ footer p {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.logement_img_caroussel .logement_img_number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+.logement_img_caroussel .logement_img_number p {
+  text-align: center;
+}
 .logement_img_caroussel .caroussel_arrow {
   position: absolute;
   display: flex;
@@ -481,6 +492,7 @@ footer p {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   row-gap: 15px;
 }
 .logement_article .logement_article_wrapper .logement_article_userInfo {
@@ -505,6 +517,7 @@ footer p {
 }
 .logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host img {
   width: 64px;
+  height: 64px;
   border-radius: 50%;
   margin-left: 10px;
 }
@@ -556,5 +569,10 @@ footer p {
 @media (max-width: 650px) {
   .logement_article_userInfo_rating img {
     width: 28px;
+  }
+}
+@media (max-width: 330px) {
+  .logement_article_userInfo_rating img {
+    width: 25px;
   }
 }/*# sourceMappingURL=index.css.map */

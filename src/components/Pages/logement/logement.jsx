@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Advertissements from "../../../assets/advertissements.json";
 import Caroussel from "./caroussel/caroussel";
 import LogementInfo from "./logementInfo/logementInfo";
+import Error from "../error/error";
 
 function Logement() {
   const id = useParams();
@@ -10,7 +11,9 @@ function Logement() {
     (advertissement) => advertissement.id === id.id
   );
 
-  return (
+  return !advertissement ? (
+    <Error />
+  ) : (
     <main className="logement">
       <Caroussel advertissement={advertissement} />
       <LogementInfo advertissement={advertissement} />
