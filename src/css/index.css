@@ -326,7 +326,6 @@ footer p {
   font-weight: 400;
   line-height: 34px;
   border-radius: 10px;
-  bottom: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -344,13 +343,18 @@ footer p {
   list-style-type: none;
 }
 
-.open {
-  overflow: visible;
-}
 .open .dropdown_box_content {
-  position: relative !important;
+  animation-name: DropdownOpen;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   top: -20px;
-  bottom: auto !important;
+  position: relative;
+}
+
+.close .dropdown_box_content {
+  animation-name: DropdownClose;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .errorComponent {
@@ -574,5 +578,26 @@ footer p {
 @media (max-width: 330px) {
   .logement_article_userInfo_rating img {
     width: 25px;
+  }
+}
+
+@keyframes DropdownOpen {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes DropdownClose {
+  0% {
+    transform: translateY(0);
+    position: relative;
+  }
+  30% {
+    transform: translateY(-100%);
+  }
+  100% {
+    position: absolute;
   }
 }/*# sourceMappingURL=index.css.map */

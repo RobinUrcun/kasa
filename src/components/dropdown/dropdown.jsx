@@ -2,12 +2,20 @@ import { useState } from "react";
 import arrow from "../../assets/form/arrow.png";
 
 function Dropdown({ title, text }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(null);
   function rolltext() {
     setIsOpen(!isOpen);
   }
   return (
-    <div className={isOpen === false ? "dropdown_box" : "dropdown_box open"}>
+    <div
+      className={
+        isOpen === null
+          ? "dropdown_box"
+          : isOpen === false
+          ? "dropdown_box close"
+          : "dropdown_box open"
+      }
+    >
       <div className="dropdown_box_h2">
         <h2 onClick={rolltext}>{title}</h2>
         <img
