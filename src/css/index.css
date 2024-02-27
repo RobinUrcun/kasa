@@ -46,15 +46,20 @@ header .header_logo {
 }
 header .header_logo img {
   height: 39px;
+  width: 33px;
+  width: auto;
   margin: 0 4px;
 }
 header .header_logo img:nth-child(1) {
   height: 62px;
+  width: 54px;
+  width: auto;
 }
 header .header_logo img:nth-child(2) {
   position: relative;
   top: 8px;
   height: 53px;
+  width: 46px;
 }
 @media (max-width: 650px) {
   header .header_logo img {
@@ -79,6 +84,7 @@ header nav {
 header nav a {
   color: #ff6060;
   font-size: 24px;
+  font-weight: 500;
   text-align: right;
   text-decoration: none;
 }
@@ -122,15 +128,18 @@ footer .logo {
 footer .logo img {
   filter: grayscale(100%) brightness(200%);
   height: 28px;
+  width: 24px;
   margin: 0 4px;
 }
 footer .logo img:nth-child(1) {
   height: 36px;
+  width: 31px;
 }
 footer .logo img:nth-child(2) {
   position: relative;
   top: 8px;
   height: 31px;
+  width: 25px;
 }
 footer p {
   color: white;
@@ -323,7 +332,7 @@ footer p {
 }
 .dropdown_box .dropdown_box_content {
   margin: 0;
-  padding: 50px 20px 25px;
+  padding: 35px 20px 25px;
   display: block;
   background-color: #f6f6f6;
   color: #ff6060;
@@ -336,7 +345,7 @@ footer p {
 }
 @media (max-width: 650px) {
   .dropdown_box .dropdown_box_content {
-    padding: 40px 10px 25px;
+    padding: 35px 10px 25px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -520,7 +529,7 @@ footer p {
   flex-direction: row;
   justify-content: flex-end;
 }
-.logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host h3 {
+.logement_article .logement_article_wrapper .logement_article_userInfo .logement_article_userInfo_host h2 {
   font-size: 18px;
   font-weight: 500;
 }
@@ -574,15 +583,18 @@ footer p {
 .logement_article_userInfo_rating img {
   margin: auto 2px;
   width: 36px;
+  height: 36px;
 }
 @media (max-width: 650px) {
   .logement_article_userInfo_rating img {
     width: 28px;
+    height: 28px;
   }
 }
 @media (max-width: 330px) {
   .logement_article_userInfo_rating img {
     width: 25px;
+    height: 28px;
   }
 }
 

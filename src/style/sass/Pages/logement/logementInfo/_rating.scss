@@ -5,11 +5,14 @@
   img {
     margin: auto 2px;
     width: 36px;
+    height: 36px;
     @media (max-width: 650px) {
       width: 28px;
+      height: 28px;
     }
     @media (max-width: 330px) {
       width: 25px;
+      height: 28px;
     }
   }
 }

@@ -1,4 +1,4 @@
-import imgbanner from "../../../../assets/images/bannerHome.png";
+import imgbanner from "../../../../assets/images/bannerHome.webp";
 
 function Banner() {
   return (

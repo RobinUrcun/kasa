@@ -13,15 +13,18 @@ footer {
     img {
       filter: grayscale(100%) brightness(200%);
       height: 28px;
+      width: 24px;
       margin: 0 4px;
     }
     img:nth-child(1) {
       height: 36px;
+      width: 31px;
     }
     img:nth-child(2) {
       position: relative;
       top: 8px;
       height: 31px;
+      width: 25px;
     }
   }
   p {

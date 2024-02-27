@@ -1,5 +1,5 @@
-import starActive from "../../../../assets/form/star-active.png";
-import starInactive from "../../../../assets/form/star-inactive.png";
+import starActive from "../../../../assets/form/star-active.webp";
+import starInactive from "../../../../assets/form/star-inactive.webp";
 
 function Rating({ rating }) {
   const ratingArray = Array.from({ length: rating });

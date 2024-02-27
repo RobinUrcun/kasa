@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-function Card({ title, cover, idtf }) {
+function Card({ title, cover, idtf, location }) {
   return (
     <li className="sectionGallery_card">
       <Link to={`logement/${idtf}`}>
         <div className="sectionGallery_card_img">
-          <img src={cover} alt={title} />
+          <img src={cover} alt={`Découvrez cette appartement à ${location}`} />
         </div>
         <p>{title}</p>
       </Link>

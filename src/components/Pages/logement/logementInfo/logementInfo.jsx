@@ -23,7 +23,7 @@ function LogementInfo({ advertissement }) {
         </div>
         <div className="logement_article_userInfo">
           <div className="logement_article_userInfo_host">
-            <h3>{advertissement.host.name}</h3>
+            <h2>{advertissement.host.name}</h2>
             <img src={advertissement.host.picture} alt="votre hôte !" />
           </div>
           <Rating rating={advertissement.rating} />

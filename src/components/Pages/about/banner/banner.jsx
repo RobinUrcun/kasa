@@ -1,4 +1,4 @@
-import imgbanner from "../../../../assets/images/bannerAbout.png";
+import imgbanner from "../../../../assets/images/bannerAbout.webp";
 
 function Banner({ children }) {
   return (

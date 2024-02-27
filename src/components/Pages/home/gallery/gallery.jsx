@@ -7,6 +7,7 @@ function Gallery() {
       <ul>
         {Advertissements.map((advertissement) => (
           <Card
+            location={advertissement.location}
             idtf={advertissement.id}
             key={advertissement.id}
             title={advertissement.title}

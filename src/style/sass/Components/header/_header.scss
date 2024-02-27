@@ -17,15 +17,20 @@ header {
     align-items: end;
     img {
       height: 39px;
+      width: 33px;
+      width: auto;
       margin: 0 4px;
     }
     img:nth-child(1) {
       height: 62px;
+      width: 54px;
+      width: auto;
     }
     img:nth-child(2) {
       position: relative;
       top: 8px;
       height: 53px;
+      width: 46px;
     }
     @media (max-width: 650px) {
       img {
@@ -49,6 +54,7 @@ header {
     a {
       color: $mainColor;
       font-size: 24px;
+      font-weight: 500;
       text-align: right;
       text-decoration: none;
       &:hover {
