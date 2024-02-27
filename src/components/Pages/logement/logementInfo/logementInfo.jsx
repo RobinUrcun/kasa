@@ -5,14 +5,11 @@ import Dropdown from "../../../dropdown/dropdown";
 function LogementInfo({ advertissement }) {
   const tags = advertissement.tags;
   return (
-    <article className="logement_article">
-      <div className="logement_article_wrapper">
+    <section className="logement_section">
+      <article className="logement_article_wrapper">
         <div className="logement_article_info">
           <h1>{advertissement.title}</h1>
-          <p
-            className="logement_article_info_location
-        "
-          >
+          <p className="logement_article_info_location">
             {advertissement.location}
           </p>
           <div className="logement_article_tags">
@@ -28,7 +25,7 @@ function LogementInfo({ advertissement }) {
           </div>
           <Rating rating={advertissement.rating} />
         </div>
-      </div>
+      </article>
       <div className="logement_article_other">
         <div className="logement_article_other_wrapper">
           <Dropdown title="Description" text={advertissement.description} />
@@ -37,7 +34,7 @@ function LogementInfo({ advertissement }) {
           <Dropdown title="Équipements" text={advertissement.equipments} />
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

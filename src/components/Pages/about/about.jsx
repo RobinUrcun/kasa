@@ -5,7 +5,7 @@ function About() {
   return (
     <main>
       <Banner />
-      <section className="dropdownSize">
+      <section className="about_info">
         <Dropdown
           title="Fiabilité"
           text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
