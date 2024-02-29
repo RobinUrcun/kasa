@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import nameIcone from "../../assets/tittle/nameIcone.png";
-import letterK from "../../assets/tittle/letterK.png";
-import letterS from "../../assets/tittle/letterS.png";
-import letterA from "../../assets/tittle/letterA.png";
+import nameIcone from "../../assets/tittle/nameIcone.webp";
+import letterK from "../../assets/tittle/letterK.webp";
+import letterS from "../../assets/tittle/letterS.webp";
+import letterA from "../../assets/tittle/letterA.webp";
 
 function Header() {
   return (
@@ -14,8 +14,8 @@ function Header() {
         <img src={letterA} alt="La lettre A  de Kasa" />
       </div>
       <nav>
-        <Link to={""}>Accueil</Link>
-        <Link to={"about"}>A Propos</Link>
+        <Link to={"/kasa/home"}>Accueil</Link>
+        <Link to={"kasa/about"}>A Propos</Link>
       </nav>
     </header>
   );

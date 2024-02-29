@@ -1,7 +1,7 @@
-import nameIcone from "../../assets/tittle/nameIcone.png";
-import letterK from "../../assets/tittle/letterK.png";
-import letterS from "../../assets/tittle/letterS.png";
-import letterA from "../../assets/tittle/letterA.png";
+import nameIcone from "../../assets/tittle/nameIcone.webp";
+import letterK from "../../assets/tittle/letterK.webp";
+import letterS from "../../assets/tittle/letterS.webp";
+import letterA from "../../assets/tittle/letterA.webp";
 
 function Footer() {
   return (

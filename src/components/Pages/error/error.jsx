@@ -7,7 +7,7 @@ function Error() {
       <p className="errorComponent_text">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <Link to="/" className="errorComponent_link">
+      <Link to="/home" className="errorComponent_link">
         Retourner sur la page d'accueil
       </Link>
     </main>
