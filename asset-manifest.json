@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kasa/static/css/main.c3078ac2.css",
+    "main.css": "/kasa/static/css/main.0fd36563.css",
     "main.js": "/kasa/static/js/main.8204a2d9.js",
     "static/media/bannerAbout.webp": "/kasa/static/media/bannerAbout.37d567287f7895d25c71.webp",
     "static/media/bannerHome.webp": "/kasa/static/media/bannerHome.cb1c6e441e53a1d61c4c.webp",
@@ -13,11 +13,11 @@
     "static/media/star-active.webp": "/kasa/static/media/star-active.eb23c8af50ca4cd62957.webp",
     "static/media/arrow_before.webp": "/kasa/static/media/arrow_before.5e87cc81054401c75548.webp",
     "static/media/arrow_after.webp": "/kasa/static/media/arrow_after.8cfd5171412ea13f9e26.webp",
-    "main.c3078ac2.css.map": "/kasa/static/css/main.c3078ac2.css.map",
+    "main.0fd36563.css.map": "/kasa/static/css/main.0fd36563.css.map",
     "main.8204a2d9.js.map": "/kasa/static/js/main.8204a2d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3078ac2.css",
+    "static/css/main.0fd36563.css",
     "static/js/main.8204a2d9.js"
   ]
 }
