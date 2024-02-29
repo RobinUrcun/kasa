@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kasa/home/static/css/main.c3078ac2.css",
-    "main.js": "/kasa/home/static/js/main.6092e902.js",
-    "static/media/bannerAbout.webp": "/kasa/home/static/media/bannerAbout.37d567287f7895d25c71.webp",
-    "static/media/bannerHome.webp": "/kasa/home/static/media/bannerHome.cb1c6e441e53a1d61c4c.webp",
-    "static/media/letterK.webp": "/kasa/home/static/media/letterK.36736248d5d705084aca.webp",
-    "static/media/letterA.webp": "/kasa/home/static/media/letterA.cb8905f56010de4f247c.webp",
-    "static/media/letterS.webp": "/kasa/home/static/media/letterS.f58ed06f55f57dc5722e.webp",
-    "static/media/nameIcone.webp": "/kasa/home/static/media/nameIcone.b16a4802a73567823d50.webp",
-    "index.html": "/kasa/home/index.html",
-    "static/media/star-inactive.webp": "/kasa/home/static/media/star-inactive.0dcaac92010c3045ef53.webp",
-    "static/media/star-active.webp": "/kasa/home/static/media/star-active.eb23c8af50ca4cd62957.webp",
-    "static/media/arrow_before.webp": "/kasa/home/static/media/arrow_before.5e87cc81054401c75548.webp",
-    "static/media/arrow_after.webp": "/kasa/home/static/media/arrow_after.8cfd5171412ea13f9e26.webp",
-    "main.c3078ac2.css.map": "/kasa/home/static/css/main.c3078ac2.css.map",
-    "main.6092e902.js.map": "/kasa/home/static/js/main.6092e902.js.map"
+    "main.css": "/kasa/static/css/main.c3078ac2.css",
+    "main.js": "/kasa/static/js/main.8204a2d9.js",
+    "static/media/bannerAbout.webp": "/kasa/static/media/bannerAbout.37d567287f7895d25c71.webp",
+    "static/media/bannerHome.webp": "/kasa/static/media/bannerHome.cb1c6e441e53a1d61c4c.webp",
+    "static/media/letterK.webp": "/kasa/static/media/letterK.36736248d5d705084aca.webp",
+    "static/media/letterA.webp": "/kasa/static/media/letterA.cb8905f56010de4f247c.webp",
+    "static/media/letterS.webp": "/kasa/static/media/letterS.f58ed06f55f57dc5722e.webp",
+    "static/media/nameIcone.webp": "/kasa/static/media/nameIcone.b16a4802a73567823d50.webp",
+    "index.html": "/kasa/index.html",
+    "static/media/star-inactive.webp": "/kasa/static/media/star-inactive.0dcaac92010c3045ef53.webp",
+    "static/media/star-active.webp": "/kasa/static/media/star-active.eb23c8af50ca4cd62957.webp",
+    "static/media/arrow_before.webp": "/kasa/static/media/arrow_before.5e87cc81054401c75548.webp",
+    "static/media/arrow_after.webp": "/kasa/static/media/arrow_after.8cfd5171412ea13f9e26.webp",
+    "main.c3078ac2.css.map": "/kasa/static/css/main.c3078ac2.css.map",
+    "main.8204a2d9.js.map": "/kasa/static/js/main.8204a2d9.js.map"
   },
   "entrypoints": [
     "static/css/main.c3078ac2.css",
-    "static/js/main.6092e902.js"
+    "static/js/main.8204a2d9.js"
   ]
 }
