@@ -31,8 +31,10 @@
 
     img {
       height: 80px;
+      width: 48px;
       @media (max-width: 650px) {
         height: 20px;
+        width: 12px;
       }
       &:hover {
         cursor: pointer;

@@ -14,8 +14,8 @@ function Header() {
         <img src={letterA} alt="La lettre A  de Kasa" />
       </div>
       <nav>
-        <Link to={"/kasa/home"}>Accueil</Link>
-        <Link to={"kasa/about"}>A Propos</Link>
+        <Link to={"/kasa"}>Accueil</Link>
+        <Link to={"/about"}>A Propos</Link>
       </nav>
     </header>
   );
