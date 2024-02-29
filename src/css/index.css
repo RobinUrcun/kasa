@@ -64,15 +64,18 @@ header .header_logo img:nth-child(2) {
 @media (max-width: 650px) {
   header .header_logo img {
     height: 33px;
+    width: 28px;
     margin: 0 4px;
   }
   header .header_logo img:nth-child(1) {
     height: 48px;
+    width: 42px;
   }
   header .header_logo img:nth-child(2) {
     position: relative;
     top: 8px;
     height: 37px;
+    width: 32px;
   }
 }
 header nav {
@@ -456,10 +459,12 @@ footer p {
 }
 .logement_img_caroussel .caroussel_arrow img {
   height: 80px;
+  width: 48px;
 }
 @media (max-width: 650px) {
   .logement_img_caroussel .caroussel_arrow img {
     height: 20px;
+    width: 12px;
   }
 }
 .logement_img_caroussel .caroussel_arrow img:hover {
