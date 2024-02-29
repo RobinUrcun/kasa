@@ -35,15 +35,18 @@ header {
     @media (max-width: 650px) {
       img {
         height: 33px;
+        width: 28px;
         margin: 0 4px;
       }
       img:nth-child(1) {
         height: 48px;
+        width: 42px;
       }
       img:nth-child(2) {
         position: relative;
         top: 8px;
         height: 37px;
+        width: 32px;
       }
     }
   }
