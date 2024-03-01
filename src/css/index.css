@@ -212,7 +212,6 @@ footer p {
   display: block;
   height: 340px;
   width: 340px;
-  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -225,6 +224,7 @@ footer p {
   content: "";
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   position: absolute;
+  opacity: 1;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -279,6 +279,23 @@ footer p {
     row-gap: 20px;
     width: 100%;
   }
+}
+.sectionGallery ul li {
+  transition: transform 0.5s, box-shadow 0.5s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sectionGallery ul li:hover {
+  transform: scale(105%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+}
+.sectionGallery ul li:hover .sectionGallery_card_img::after {
+  transition: opacity 0.5s;
+  opacity: 0.3;
+}
+.sectionGallery ul li:hover .sectionGallery_card_img img {
+  transition: transform 0.5s;
+  transform: scale(130%);
 }
 
 .about_info {

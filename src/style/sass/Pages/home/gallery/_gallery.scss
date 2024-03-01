@@ -20,5 +20,24 @@
       row-gap: 20px;
       width: 100%;
     }
+    li {
+      transition: transform 0.5s, box-shadow 0.5s;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(105%);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+        & .sectionGallery_card_img::after {
+          transition: opacity 0.5s;
+
+          opacity: 0.3;
+        }
+        & .sectionGallery_card_img img {
+          transition: transform 0.5s;
+          transform: scale(130%);
+        }
+      }
+    }
   }
 }
