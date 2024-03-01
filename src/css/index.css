@@ -236,6 +236,7 @@ footer p {
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.5s;
 }
 @media (max-width: 650px) {
   .sectionGallery_card a .sectionGallery_card_img img {
@@ -294,7 +295,6 @@ footer p {
   opacity: 0.3;
 }
 .sectionGallery ul li:hover .sectionGallery_card_img img {
-  transition: transform 0.5s;
   transform: scale(130%);
 }
 

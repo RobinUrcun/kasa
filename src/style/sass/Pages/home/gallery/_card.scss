@@ -8,6 +8,7 @@
     width: 340px;
     overflow: hidden;
     position: relative;
+
     @media (max-width: 650px) {
       width: 100%;
     }
@@ -28,6 +29,8 @@
         width: 340px;
         height: 340px;
         object-fit: cover;
+        transition: transform 0.5s;
+
         @media (max-width: 650px) {
           width: 100%;
         }
