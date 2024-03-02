@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Advertissements from "../../../assets/advertissements.json";
+import Advertissements from "../../assets/advertissements.json";
 import Caroussel from "./caroussel/caroussel";
 import LogementInfo from "./logementInfo/logementInfo";
 import Error from "../error/error";

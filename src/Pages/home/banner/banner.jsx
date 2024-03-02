@@ -1,12 +1,12 @@
-import imgbanner from "../../../../assets/images/bannerAbout.webp";
+import imgbanner from "../../../assets/images/bannerHome.webp";
 
-function Banner({ children }) {
+function Banner() {
   return (
     <div className="banner">
       <div className="banner_background">
         <img src={imgbanner} alt="Bannière" />
       </div>
-      {children}
+      <h1>Chez vous, partout et ailleurs</h1>
     </div>
   );
 }

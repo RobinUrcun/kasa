@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
 
-import arrow_before from "../../../../assets/form/arrow_before.webp";
-import arrow_after from "../../../../assets/form/arrow_after.webp";
+import arrow_before from "../../../assets/form/arrow_before.webp";
+import arrow_after from "../../../assets/form/arrow_after.webp";
 
 function Caroussel({ advertissement }) {
   const [pictureNumber, setPictureNumber] = useState(0);

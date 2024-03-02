@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Routeur, Routes, Route } from "react-router-dom";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Home from "../components/Pages/home";
-import Error from "../components/Pages/error/error";
-import About from "../components/Pages/about/about";
-import Logement from "../components/Pages/logement/logement";
+import Home from "../Pages/home";
+import Error from "../Pages/error/error";
+import About from "../Pages/about/about";
+import Logement from "../Pages/logement/logement";
 
 export default function RoutesApp() {
   return (

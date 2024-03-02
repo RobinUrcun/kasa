@@ -1,4 +1,4 @@
-import Advertissements from "../../../../assets/advertissements.json";
+import Advertissements from "../../../assets/advertissements.json";
 import Card from "./cards";
 
 function Gallery() {

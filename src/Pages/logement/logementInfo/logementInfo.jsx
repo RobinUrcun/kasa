@@ -1,6 +1,6 @@
 import Tag from "./tag";
 import Rating from "./rating";
-import Dropdown from "../../../dropdown/dropdown";
+import Dropdown from "../../../components/dropdown/dropdown";
 
 function LogementInfo({ advertissement }) {
   const tags = advertissement.tags;
