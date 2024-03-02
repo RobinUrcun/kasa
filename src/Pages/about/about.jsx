@@ -1,10 +1,12 @@
-import Banner from "./banner/banner";
+import Banner from "../../components/banner/banner";
+import bannerAbout from "../../assets/images/bannerAbout.webp";
 import Dropdown from "../../components/dropdown/dropdown";
 
 function About() {
+  console.log(bannerAbout);
   return (
     <main>
-      <Banner />
+      <Banner backgroundImg={bannerAbout} />
       <section className="about_info">
         <Dropdown
           title="Fiabilité"

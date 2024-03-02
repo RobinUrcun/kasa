@@ -1,10 +1,8 @@
-import imgbanner from "../../../assets/images/bannerAbout.webp";
-
-function Banner({ children }) {
+function Banner({ backgroundImg, children }) {
   return (
     <div className="banner">
       <div className="banner_background">
-        <img src={imgbanner} alt="Bannière" />
+        <img src={backgroundImg} alt="Bannière" />
       </div>
       {children}
     </div>
