@@ -3,7 +3,6 @@ import bannerAbout from "../../assets/images/bannerAbout.webp";
 import Dropdown from "../../components/dropdown/dropdown";
 
 function About() {
-  console.log(bannerAbout);
   return (
     <main>
       <Banner backgroundImg={bannerAbout} />

@@ -6,10 +6,12 @@ import Error from "../error/error";
 
 function Logement() {
   const id = useParams();
+  console.log(id);
 
   const advertissement = Advertissements.find(
     (advertissement) => advertissement.id === id.id
   );
+  console.log(advertissement);
 
   return !advertissement ? (
     <Error />

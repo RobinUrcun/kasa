@@ -13,7 +13,7 @@ export default function RoutesApp() {
       <Header />
       <Routes>
         <Route path="/kasa" element={<Home />}></Route>
-        <Route path="/logement/@" element={<Logement />}></Route>
+        <Route path="/logement/:id" element={<Logement />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
